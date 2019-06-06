@@ -9,7 +9,7 @@ namespace Fuzzyiot {
     //% blockGap=7
 
     export function iniciaWifi(): void {
-        serial.redirect(SerialPin.P16,SerialPin.P8,BaudRate.BaudRate115200);
+        serial.redirect (SerialPin.P16,SerialPin.P8,BaudRate.BaudRate115200);
     }
 
     //% blockId=fuzzy_configura_wifi
@@ -17,7 +17,7 @@ namespace Fuzzyiot {
     //% weight=80
     //% blockGap=7
     export function configuraWifi(ssid: string, pwd: string): void {
-        //.  serial.writeLine("(AT+wifi?ssid="+ssid+"&pwd="+pwd+")");
+        serial.writeLine("(AT+wifi?ssid="+ssid+"&pwd="+pwd+")");
     }
     //% blockId=fuzzy_configura_thingspeak
     //% block="Envia chave thingspeak %key| campo1 %field1| campo2 %field2"
