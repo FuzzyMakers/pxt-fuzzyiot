@@ -51,7 +51,8 @@ namespace Fuzzyiot {
         if(!flag)
         	break;
     }
-    //%subcategory=More
+
+    
     //% blockId=muselab_general_mqtt
     //% block="Conecta CloudMQTT servidor %host| port %port| client id %clientId| username %username| password %pwd"
     //% weight=43
