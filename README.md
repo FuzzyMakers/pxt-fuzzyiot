@@ -1,17 +1,60 @@
-# pxt-teste
+# pxt-fuzzyiot
 
 
 
 ## TODO
 
-- [ ] Add a reference for your blocks here
-- [ ] Add "icon.png" image (300x200) in the root folder
-- [ ] Add "- beta" to the GitHub project description if you are still iterating it.
-- [ ] Turn on your automated build on https://travis-ci.org
-- [ ] Use "pxt bump" to create a tagged release on GitHub
-- [ ] Get your package reviewed and approved https://makecode.microbit.org/packages/approval
+Extensão criada para uso dos kits da Fuzzy Makers.
+comandos por Java script:
 
-Read more at https://makecode.microbit.org/packages/build-your-own
+## Palavra chave: fuzzyiot
+EX: fuzzyiot.iniciaWifi();
+
+### iniciaWifi();
+ Inicia comunicação com o shield wifi.
+
+### configuraWifi(ssid,pwd);
+Configura o nome e a senha da rede wifi.
+
+### enviaThingspeak(key, campo de info 1, campo de info 2);
+
+Envia chave ThingSpeak  e dos campos para enviar informações.
+
+### enviaIFTTT(chaveIFTTT, nome_do_evento, campo de info 1, campo de info 2);
+
+Envia chave para conexão ao IFTTT nome do evento e campo para enviar informações.
+
+### configuraWifiHotspot(ssid, pwd);
+Configura nome e senha de um access point com o shield WiFi.
+
+### infoweb();
+
+Recebe informações da internet
+
+### conCloudMQTT(hostname, port clientId, username, pwd);
+
+Conectar ao CloudMQTT com as informações do servidor CloudMQTT.
+
+### mqttPublCloudmqtt(topic, payload);
+Faz publicação ao servidor com tópico e payload específico.
+
+### mqttsubscribe(topic);
+Faz inscrição em tópico específico.
+
+### infobattery();
+Informa porcentagem da bateria.
+
+### enviaversion();
+Versão do firmware.
+
+### enviaAT();
+Eniva comando AT para o shield WiFi.
+
+### enviaTeste();
+Teste WiFi shield.
+
+### setDeepSleep(tempo em s);
+Tempo em economia de energia.
 
 ## License
 
