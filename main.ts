@@ -37,7 +37,7 @@ namespace Fuzzyiot {
     //% weight=58
     //% blockGap=7
     export function configuraWifiHotspot(ssid: string, pwd: string): void {
-        //.serial.writeLine("(AT+wifi_hotspot?ssid="+ssid+"&pwd="+pwd+")");
+        serial.writeLine("(AT+wifi_hotspot?ssid="+ssid+"&pwd="+pwd+")");
     }
     //%blockId=fuzzy_start_server
     //%block="Começa receber informação da web"
