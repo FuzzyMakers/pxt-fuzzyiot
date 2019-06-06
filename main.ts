@@ -82,7 +82,7 @@ namespace Fuzzyiot {
     //% weight=40
     //% blockGap=7
 
-    export function infobattery(): void {
+    export function infobateria(): void {
         serial.writeLine("(AT+battery)");
     }
 
