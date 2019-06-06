@@ -52,6 +52,7 @@ namespace Fuzzyiot {
         if(!flag)
         	break;
     }
+    }
 
     
     //% blockId=fuzzy_general_mqtt
@@ -75,6 +76,7 @@ namespace Fuzzyiot {
     export function mqttsubscribe(topic: string): void {
         serial.writeLine("(AT+mqttSub?topic="+topic+")");
     }
+
     //%blockId=fuzzy_bateria
     //%block="Mostrar nivel de bateria"
     //% weight=40
@@ -83,6 +85,7 @@ namespace Fuzzyiot {
     export function infobattery(): void {
         serial.writeLine("(AT+battery)");
     }
+
     //%blockId=fuzzy_version
     //%block="Mostrar versão do firmware"
     //% weight=39
@@ -90,6 +93,7 @@ namespace Fuzzyiot {
     export function enviaversion(): void {
         serial.writeLine("(AT+version)");
     }
+
     //%blockId=fuzzy_at
     //%block="Envia comando AT %command"
     //% weight=30
@@ -98,6 +102,7 @@ namespace Fuzzyiot {
         serial.writeLine(command);
         flag = false
     }
+
     //%blockId=fuzzy_teste
     //%block="Teste wifi shield"
     //% weight=20
@@ -105,6 +110,7 @@ namespace Fuzzyiot {
     export function enviaTeste(): void {
         serial.writeLine("(AT+testing)");
     }
+
     //%blockId=fuzzy_deep_sleep
     //%block="Configura o tempo de baixa energia %second| second"
     //% weight=15
