@@ -7,8 +7,8 @@
 Extensão criada para uso dos kits da Fuzzy Makers.
 comandos por Java script:
 
-## Palavra chave: fuzzyiot
-EX: fuzzyiot.iniciaWifi();
+## Palavra chave: Fuzzyiot
+EX: Fuzzyiot.iniciaWifi();
 
 ### iniciaWifi();
  Inicia comunicação com o shield wifi.
