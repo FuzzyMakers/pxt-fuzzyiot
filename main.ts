@@ -39,6 +39,7 @@ namespace Fuzzyiot {
     export function configuraWifiHotspot(ssid: string, pwd: string): void {
         serial.writeLine("(AT+wifi_hotspot?ssid="+ssid+"&pwd="+pwd+")");
     }
+
     //%blockId=fuzzy_start_server
     //%block="Começa receber informação da web"
     //% weight=55
@@ -53,14 +54,14 @@ namespace Fuzzyiot {
     }
 
     
-    //% blockId=muselab_general_mqtt
+    //% blockId=fuzzy_general_mqtt
     //% block="Conecta CloudMQTT servidor %host| port %port| client id %clientId| username %username| password %pwd"
     //% weight=43
     //% blockGap=7
     export function conCloudMQTT(host: string, port: string, clientId: string, username: string, pwd: string): void {
         serial.writeLine("(AT+startMQTT?host="+host+"&port="+port+"&clientId="+clientId+"&username="+username+"&password="+pwd+")");
     }
-    //%subcategory=More
+
     //%blockId=fuzzy_mqtt_publicar
     //% block="MQTT publicar no topico %topic| informação %payload"
     //% weight=42
