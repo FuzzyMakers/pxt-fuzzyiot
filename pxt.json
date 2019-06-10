@@ -1,10 +1,9 @@
 {
-    "name": "pxt-teste",
+    "name": "pxt-fuzzyiot",
     "version": "0.0.2",
     "description": "",
     "dependencies": {
         "core": "*"
-
     },
     "files": [
         "README.md",
