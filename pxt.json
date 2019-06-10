@@ -4,7 +4,7 @@
     "description": "",
     "dependencies": {
         "core": "*",
-          "SSD1306_OLED": "github:tinkertanker/pxt-oled-ssd1306"
+          
     },
     "files": [
         "README.md",
