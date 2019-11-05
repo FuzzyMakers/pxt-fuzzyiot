@@ -2,7 +2,7 @@
 namespace Fuzzy_sensor{
     let flag = true;
 
-    //% blockId=mbit_ultrasonic block="Distancia do senosr ultrasonico(cm)"
+    //% blockId=mbit_ultrasonic block="Distância do sensor ultrasonico(cm)"
     //% weight=98
     //% blockGap=10
     export function Ultrasonic_Car(): number {
