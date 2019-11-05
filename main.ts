@@ -1,5 +1,5 @@
 //% color="#ED755E"
-namespace Fuzzyiot {
+namespace Fuzzy_sensor{
     let flag = true;
 
     //% blockId=mbit_ultrasonic block="Distancia do senosr ultrasonico(cm)"
